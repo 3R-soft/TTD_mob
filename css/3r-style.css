@@ -1,0 +1,96 @@
+/* centriranje po visini */	/*3R*/
+.sredina {
+	left: 0%;
+	bottom: 0%;
+	right: 0%;
+	top: 0%;
+	height: auto;
+	position: absolute;
+	z-index: 0;
+}
+/* heder i futer nisu providni */	/*3R*/
+.ui-header-fullscreen,.ui-footer-fullscreen{filter:Alpha(Opacity=100);opacity:1}
+
+/* zatamnjenje ispod popup prozora i definisanje boje */	/*3R*/
+.ui-popup-screen.in {
+	background: #000;
+	opacity:0.7;
+	filter:Alpha(Opacity=70)
+}
+
+/* za izbegavanje flikeringa - ovo ne radi */	/*3R*/
+/* 
+.ui-page {-webkit-backface-visibility: hidden;}
+*/
+
+/* galerija slika */
+.gallery {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*
+.gallery:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+*/
+.gallery li {
+	float: left;
+	width: 50%;
+}
+.gallery li a {
+	display: block;
+	margin: 5px;
+	border: 1px solid #3c3c3c;
+}
+.gallery li img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* copyright */
+.copyright {
+	text-align: center;
+	font-size: 11px;
+	color: #999;
+}
+
+/* nova loading ikona */	/*3R*/
+.ui-icon-loading {
+	background-image: url(../themes/images/ajax-loader.gif);
+	background-size: 36px 36px;
+}
+
+/* loading prozor */
+.ui-loader-verbose{ width:200px; height:60px; margin-left:-110px; margin-top:-40px; padding:10px; border:solid 1px #000} /* pravougaonik loadera */
+.ui-loader-verbose{ filter:Alpha(Opacity=95); opacity:.95} /* pravougaonik loadera */
+.ui-loader .ui-icon{ width:34px; height:34px; -webkit-border-radius:18px; border-radius:18px } /* velicina prostora za ikonu umanjeno za 2px (zbog paddinga od 1px) */
+.ui-loader .ui-icon{ background-color:transparent; filter:Alpha(Opacity=100); opacity:1} /* prostor za ikonu */
+/*
+.ui-loader { width: 240px; margin-left: -150px; margin-top: -50px; padding: 20px 30px; } /* drugi format pravougaonika poruke */
+
+
+/* ovo ispod je original iz: jquery.mobile.structure-1.3.0-rc.1.css */	/*3R*/
+/*
+.ui-loading .ui-loader{display:block}
+.ui-loader{display:none;z-index:9999999;position:fixed;top:50%;left:50%;border:0}
+.ui-loader-default{background:none;filter:Alpha(Opacity=18);opacity:.18;width:46px;height:46px;margin-left:-23px;margin-top:-23px}
+.ui-loader-verbose{width:200px;filter:Alpha(Opacity=88);opacity:.88;box-shadow:0 1px 1px -1px #fff;height:auto;margin-left:-110px;margin-top:-43px;padding:10px}
+.ui-loader-default h1{font-size:0;width:0;height:0;overflow:hidden}
+.ui-loader-verbose h1{font-size:16px;margin:0;text-align:center}
+.ui-loader .ui-icon{background-color:#000;display:block;margin:0;width:44px;height:44px;padding:1px;-webkit-border-radius:36px;border-radius:36px}
+.ui-loader-verbose .ui-icon{margin:0 auto 10px;filter:Alpha(Opacity=75);opacity:.75}
+.ui-loader-textonly{padding:15px;margin-left:-115px}
+.ui-loader-textonly .ui-icon{display:none}
+.ui-loader-fakefix{position:absolute}
+*/
+/* ovo iznad je original iz: jquery.mobile.structure-1.3.0-rc.1.css */	/*3R*/
+
+
+/* margine oko tastera u futeru*/	/*3R*/
+.ui-header .ui-btn, .ui-footer .ui-btn, .ui-bar .ui-btn { margin: 0; }
